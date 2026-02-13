@@ -267,4 +267,5 @@ class ShareToGroup():
                     elif 'Tidak Dapat Membagikan Postingan' in str(pos): tur = {'status':'failed','id':None,'message':'post has been deleted or there is an error'}
                     else: tur = {'status':'success','id':idpost,'message':None}
             except Exception as e: tur = {'status':'failed','id':None,'message':'Terjadi Kesalahan'}
+
         return(tur)
